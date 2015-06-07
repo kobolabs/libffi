@@ -1,3 +1,10 @@
+Building in Kobo chroot
+=======================
+./autogen.sh
+./configure --prefix=/ --host=arm-linux
+make -j4
+make DESTDIR=/chroot install
+
 Status
 ======
 
